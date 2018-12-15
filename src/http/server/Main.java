@@ -3,7 +3,7 @@ package http.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+// https://github.com/alex-zr/oop
 public class Main {
     public static void main(String[] args) {
         String answer = getContent();
@@ -35,6 +35,7 @@ public class Main {
             ansver += "<td>" + starr[i].getCourse() + "</td>";
             ansver += "</tr>";
         }
+        ansver += "<a href='/details'>Click me!</a>";
         ansver += "</table></body></html>";
         return ansver;
     }
